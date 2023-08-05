@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Menu,
   MenuButton,
@@ -20,7 +19,6 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   if(error) return null;
 
   return (
-    <Box padding={3}>
       <Menu>
         <MenuButton as={Button} rightIcon={<FaChevronDown />}>
             { selectedPlatform?.name || "Platform" }
@@ -31,7 +29,6 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
           ))}
         </MenuList>
       </Menu>
-    </Box>
   );
 };
 
